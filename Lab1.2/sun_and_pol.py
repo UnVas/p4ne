@@ -13,4 +13,9 @@ list_y2 = list(map(getvalue, sheet['D'][1:]))
 
 pyplot.plot(list_x, list_y1, label='Уровень отношений')
 pyplot.plot(list_x, list_y2, label='Активность Солнца')
+
+pyplot.xlabel('Годы')
+pyplot.ylabel('Тем-ра/Акт-ть')
+pyplot.legend(loc='upper left')
 pyplot.show()
+
