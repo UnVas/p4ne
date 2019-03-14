@@ -26,6 +26,3 @@ list_ip.sort(key=sortkeyfunc)
 
 for i in range(0, N):
     print(list_ip[i])
-#a = IPv4RandomNetwork()
-#print(a)
-
