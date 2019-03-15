@@ -1,5 +1,4 @@
 import glob
-#from ipaddress import IPv4Network
 
 PATTERN = 'ip address'
 
@@ -14,19 +13,12 @@ for filename in file_list:
                 address_list.append(line.strip())
                 #print(line)
 
-
-
-
-
 list1 = list(set(address_list))
 list2 = []
 for line in list1:
     if line.find(PATTERN) == 0:
-        list2.append(line)
-
-
-
-
+        if line[11] in "0123456789":
+            list2.append(line)
 
 display_list = list2
 
